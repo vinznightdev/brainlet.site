@@ -278,7 +278,7 @@ export default function Hero({ setActiveTab }: HeroProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-stone-950/85 backdrop-blur-sm z-50 flex items-center justify-center p-4 md:p-6"
+            className="fixed inset-0 bg-stone-950/85 backdrop-blur-sm z-50 overflow-y-auto flex items-start md:items-center justify-center p-4 md:p-6"
             onClick={() => setSelectedImage(null)}
           >
             <motion.div
@@ -286,7 +286,7 @@ export default function Hero({ setActiveTab }: HeroProps) {
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 15 }}
               transition={{ type: 'spring', damping: 25, stiffness: 180 }}
-              className="relative max-w-4xl w-full bg-stone-50 dark:bg-stone-900 border-3 border-stone-850 dark:border-stone-100 p-4 md:p-6 rounded-2xl shadow-2xl flex flex-col md:flex-row gap-6"
+              className="relative max-w-4xl w-full bg-stone-50 dark:bg-stone-900 border-3 border-stone-850 dark:border-stone-100 p-4 md:p-6 rounded-2xl shadow-2xl flex flex-col md:flex-row gap-6 my-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}

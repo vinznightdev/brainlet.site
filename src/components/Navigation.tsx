@@ -72,7 +72,7 @@ export default function Navigation({ activeTab, setActiveTab, darkMode, toggleDa
             target="_blank"
             rel="noopener noreferrer"
             title="Follow Brainlet on Twitter"
-            className="p-2 border-2 border-stone-850 dark:border-stone-100 rounded-lg bg-stone-50 hover:bg-amber-50 dark:bg-stone-900 dark:hover:bg-stone-850 text-stone-800 dark:text-stone-100 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.9)] dark:shadow-[2px_2px_0px_0px_rgba(245,245,244,0.9)] cursor-pointer transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 flex items-center justify-center"
+            className="p-2 border-2 border-stone-850 dark:border-stone-100 rounded-lg bg-stone-50 hover:bg-amber-50 dark:bg-stone-900 dark:hover:bg-stone-850 text-stone-800 dark:text-stone-100 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.9)] dark:shadow-[2px_2px_0px_0px_rgba(245,245,244,0.9)] cursor-pointer transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 hidden sm:flex items-center justify-center"
           >
             <Twitter className="w-5 h-5 text-sky-500 dark:text-sky-400" />
           </a>
@@ -83,7 +83,7 @@ export default function Navigation({ activeTab, setActiveTab, darkMode, toggleDa
             target="_blank"
             rel="noopener noreferrer"
             title="Join Brainlet Telegram"
-            className="p-2 border-2 border-stone-850 dark:border-stone-100 rounded-lg bg-stone-50 hover:bg-amber-50 dark:bg-stone-900 dark:hover:bg-stone-850 text-stone-800 dark:text-stone-100 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.9)] dark:shadow-[2px_2px_0px_0px_rgba(245,245,244,0.9)] cursor-pointer transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 flex items-center justify-center"
+            className="p-2 border-2 border-stone-850 dark:border-stone-100 rounded-lg bg-stone-50 hover:bg-amber-50 dark:bg-stone-900 dark:hover:bg-stone-850 text-stone-800 dark:text-stone-100 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.9)] dark:shadow-[2px_2px_0px_0px_rgba(245,245,244,0.9)] cursor-pointer transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 hidden sm:flex items-center justify-center"
           >
             <Send className="w-5 h-5 text-cyan-500 dark:text-cyan-400" />
           </a>
@@ -94,7 +94,7 @@ export default function Navigation({ activeTab, setActiveTab, darkMode, toggleDa
             target="_blank"
             rel="noopener noreferrer"
             title="Brainlet Origin Meme"
-            className="p-2 border-2 border-stone-850 dark:border-stone-100 rounded-lg bg-stone-50 hover:bg-amber-50 dark:bg-stone-900 dark:hover:bg-stone-850 text-stone-800 dark:text-stone-100 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.9)] dark:shadow-[2px_2px_0px_0px_rgba(245,245,244,0.9)] cursor-pointer transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 flex items-center justify-center gap-1.5"
+            className="p-2 border-2 border-stone-850 dark:border-stone-100 rounded-lg bg-stone-50 hover:bg-amber-50 dark:bg-stone-900 dark:hover:bg-stone-850 text-stone-800 dark:text-stone-100 shadow-[2px_2px_0px_0px_rgba(28,25,23,0.9)] dark:shadow-[2px_2px_0px_0px_rgba(245,245,244,0.9)] cursor-pointer transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 hidden sm:flex items-center justify-center gap-1.5"
           >
             <span className="text-orange-500 text-sm font-bold font-hand hidden md:inline">Origin Meme</span>
             <ExternalLink className="w-4 h-4 text-orange-500" />

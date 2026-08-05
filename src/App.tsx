@@ -84,7 +84,7 @@ export default function App() {
           <div className="w-5 h-5 flex items-center justify-center bg-stone-200 dark:bg-stone-800 rounded border border-stone-400 dark:border-stone-700 rotate-6">
             📝
           </div>
-          <span>Drafted with 100% genuine charcoal pencil. No pixels were harmed.</span>
+          <span>copy right 2026</span>
         </div>
         <div className="flex gap-4">
           <a 
