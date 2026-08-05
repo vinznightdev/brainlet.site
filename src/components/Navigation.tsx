@@ -31,9 +31,6 @@ export default function Navigation({ activeTab, setActiveTab, darkMode, toggleDa
             <h1 className="font-sketchy text-lg md:text-xl font-bold tracking-tight text-stone-900 dark:text-stone-50 flex items-center gap-1">
               Brainlet <span className="text-red-500 dark:text-red-400 font-hand text-2xl">🧠</span>
             </h1>
-            <p className="text-[10px] uppercase tracking-wider font-hand text-stone-500 dark:text-stone-400 -mt-1 font-bold">
-              Base style: Degen Roundtable
-            </p>
           </div>
         </div>
 

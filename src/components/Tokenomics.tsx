@@ -118,7 +118,7 @@ export default function Tokenomics() {
       };
     }
     return {
-      text: "PERFECT BALANCE: The roundtable is currently satisfied with your bureaucratic drafting.",
+      text: "PERFECT BALANCE: The Brainlet is currently satisfied with your bureaucratic drafting.",
       color: "bg-emerald-100 border-emerald-400 text-emerald-700"
     };
   };
@@ -143,7 +143,7 @@ export default function Tokenomics() {
               Draft Tokenomics
             </h2>
             <p className="font-hand text-base font-bold text-stone-500 mt-2">
-              Every single chip, coupon, and juice box is accounted for on this authentic cardboard scrap. Subject to adjustments during active roundtable arguments.
+              Every single chip, coupon, and juice box is accounted for on this authentic cardboard scrap. Subject to adjustments during active Brainlet arguments.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">

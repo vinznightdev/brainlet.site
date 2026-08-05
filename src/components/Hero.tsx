@@ -10,7 +10,7 @@ interface HeroProps {
 const BOARDROOM_IMAGERY = [
   {
     url: "https://www.image2url.com/r2/default/images/1785911741721-845dfae0-460c-40c7-b404-da1cd3d84c1a.jpg",
-    title: "Roundtable Blueprint",
+    title: "Brainlet Blueprint",
     caption: "The original hand-scribbled design blueprint establishing the 10-seat leverage table structure.",
     rotation: "rotate-[-1.5deg]"
   },
@@ -128,11 +128,11 @@ export default function Hero({ setActiveTab }: HeroProps) {
               </p>
             </div>
 
-            {/* Leveled Roundtable Image (without border, matches height of Legend box) */}
+            {/* Leveled Brainlet Image (without border, matches height of Legend box) */}
             <div className="rounded-2xl shadow-xl overflow-hidden relative min-h-[320px] lg:min-h-0 bg-white">
               <img 
                 src="https://www.image2url.com/r2/default/images/1785911751213-3b3a90bc-4db2-42f3-8599-1907d6752f2a.jpg" 
-                alt="Meme Roundtable"
+                alt="Meme Brainlet"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover absolute inset-0"
               />
@@ -174,7 +174,7 @@ export default function Hero({ setActiveTab }: HeroProps) {
           <div>
             <h2 className="font-sketchy text-2xl md:text-3xl font-black text-stone-900 dark:text-stone-100 flex items-center gap-2">
               <Camera className="w-6 h-6 text-red-500 animate-pulse" />
-              <span>Sacred Boardroom Sketches</span>
+              <span>Sacred Boardroom Brainlet</span>
             </h2>
             <p className="font-hand text-base font-bold text-stone-600 dark:text-stone-300 mt-1">
               Tap any handwritten parchment below to examine the original droll formulas in ultra-high resolution.
@@ -234,7 +234,7 @@ export default function Hero({ setActiveTab }: HeroProps) {
         </div>
       </div>
 
-      {/* SECTION 3: ROUNDTABLE HIGHLIGHT DOODLE SHEET */}
+      {/* SECTION 3: BRAINLET HIGHLIGHT DOODLE SHEET */}
       <div className="max-w-2xl mx-auto w-full">
         
         {/* Highlight Card 1: The Code of Conduct */}
@@ -271,7 +271,7 @@ export default function Hero({ setActiveTab }: HeroProps) {
 
       </div>
 
-      {/* LIGHTBOX OVERLAY FOR DETAILED SKETCHES */}
+      {/* LIGHTBOX OVERLAY FOR DETAILED BRAINLET */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
@@ -325,7 +325,7 @@ export default function Hero({ setActiveTab }: HeroProps) {
                 </div>
 
                 <div className="relative z-10 pt-4 border-t border-dashed border-stone-300 dark:border-stone-700 mt-6 flex justify-between items-center text-xs font-hand text-stone-400">
-                  <span>ROUNDTABLE COUNCIL CO.</span>
+                  <span>BRAINLET COUNCIL CO.</span>
                   <span>SECURE ACCESS</span>
                 </div>
               </div>
