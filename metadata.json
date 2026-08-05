@@ -1,0 +1,6 @@
+{
+  "name": "Brainlet 🧠",
+  "description": "An interactive, handcrafted website featuring a paper-sketch aesthetic based on the meme roundtable, including a character board, copium capsule dispenser, interactive scratchpad, and a degen card battle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-handwritten {
+    font-family: 'Patrick Hand', cursive, sans-serif;
+  }
+  .font-sketch {
+    font-family: 'Architects Daughter', cursive, sans-serif;
+  }
+}
+
+/* Custom styles for paper containers */
+.paper-container {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(28, 25, 23, 0.85);
+}
+
+.dark .paper-container {
+  border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+/* Ruled paper background */
+.bg-paper-ruled {
+  background-color: #fcfbf7;
+  background-image: linear-gradient(#e2e0d8 1px, transparent 1px);
+  background-size: 100% 2rem;
+  position: relative;
+}
+.bg-paper-ruled::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2.5rem;
+  width: 2px;
+  background-color: rgba(239, 68, 68, 0.45); /* Red notebook margin */
+}
+
+/* Dark mode ruled paper: chalkboard sketch */
+.dark .bg-paper-ruled {
+  background-color: #1a1816;
+  background-image: linear-gradient(rgba(245, 245, 244, 0.08) 1px, transparent 1px);
+}
+.dark .bg-paper-ruled::before {
+  background-color: rgba(239, 68, 68, 0.25);
+}
+
+/* Graph/Grid paper background */
+.bg-paper-grid {
+  background-color: #f9f8f3;
+  background-image: 
+    linear-gradient(rgba(120, 110, 90, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120, 110, 90, 0.1) 1px, transparent 1px);
+  background-size: 1.5rem 1.5rem;
+}
+
+.dark .bg-paper-grid {
+  background-color: #111827; /* Dark blueprint navy */
+  background-image: 
+    linear-gradient(rgba(147, 197, 253, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 197, 253, 0.09) 1px, transparent 1px);
+}
+
+/* Yellow legal pad */
+.bg-paper-legal {
+  background-color: #fefef0;
+  background-image: linear-gradient(#fef08a 1px, transparent 1px);
+  background-size: 100% 2.2rem;
+  position: relative;
+}
+.bg-paper-legal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3rem;
+  width: 2px;
+  background-color: rgba(239, 68, 68, 0.4);
+}
+
+.dark .bg-paper-legal {
+  background-color: #1a1910;
+  background-image: linear-gradient(#2e2b14 1px, transparent 1px);
+}
+.dark .bg-paper-legal::before {
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
+/* Plain off-white draft paper */
+.bg-paper-plain {
+  background-color: #fafaf7;
+  background-image: radial-gradient(#eceae2 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.dark .bg-paper-plain {
+  background-color: #141413;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+}
+
+/* Handdrawn sketch borders using clip paths and border radius slants */
+.border-sketch {
+  border: 3px solid #1c1917;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.dark .border-sketch {
+  border: 3px solid #f5f5f4;
+}
+
+/* Tiny sketch border for items */
+.border-sketch-sm {
+  border: 2px solid #292524;
+  border-radius: 120px 10px 110px 8px/8px 110px 10px 120px;
+}
+
+.dark .border-sketch-sm {
+  border: 2px solid #e7e5e4;
+}
+
+/* Button sketch styles */
+.btn-sketch {
+  border: 2px solid #1c1917;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  transition: all 0.2s ease-in-out;
+}
+.btn-sketch:hover {
+  transform: scale(1.02) rotate(-0.5deg);
+  box-shadow: 4px 4px 0px 0px #1c1917;
+}
+
+.dark .btn-sketch {
+  border: 2px solid #f5f5f4;
+}
+.dark .btn-sketch:hover {
+  box-shadow: 4px 4px 0px 0px #f5f5f4;
+}
+
+/* Crumpled look */
+.paper-tear {
+  position: relative;
+}
+.paper-tear::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 6px;
+  background-image: linear-gradient(-45deg, transparent 4px, #fafaf7 4px), linear-gradient(45deg, transparent 4px, #fafaf7 4px);
+  background-size: 8px 12px;
+  background-position: left bottom;
+}
+
+.dark .paper-tear::after {
+  background-image: linear-gradient(-45deg, transparent 4px, #141413 4px), linear-gradient(45deg, transparent 4px, #141413 4px);
+}
+
+/* Handdrawn animations */
+@keyframes sketch-wobble {
+  0%, 100% { transform: rotate(-0.5deg); }
+  50% { transform: rotate(0.5deg) scale(1.002); }
+}
+
+.animate-sketch-wobble {
+  animation: sketch-wobble 4s infinite ease-in-out;
+}
+
+/* Font helpers */
+.font-hand {
+  font-family: 'Patrick Hand', cursive, sans-serif;
+}
+
+.font-sketchy {
+  font-family: 'Architects Daughter', sans-serif;
+}
+
+/* Custom Scrollbar for Handcrafted Feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(120, 110, 90, 0.05);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 110, 90, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 110, 90, 0.5);
+}
